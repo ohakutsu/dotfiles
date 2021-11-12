@@ -1,0 +1,7 @@
+[alias]
+  fixup = commit --fixup
+  amend = commit --amend
+
+[user]
+  name = ohakutsu
+  email = dev.ohakutsu@gmail.com
