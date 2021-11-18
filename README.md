@@ -16,5 +16,6 @@ $ git clone git@github.com:ohakutsu/dotfiles.git
 2. Run `make`
 
 ```
+$ cd ~/ohakutsu/dotfiles
 $ make
 ```
