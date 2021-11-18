@@ -11,7 +11,9 @@ brew:
 .PHONY: zsh
 zsh:
 	ln -sfv ${DOTFILES_PATH}/.zshrc ~/.zshrc
-	ln -sfv ${DOTFILES_PATH}/.zsh ~/.zsh
+	mkdir -p ~/.zsh
+	ln -sfv ${DOTFILES_PATH}/.zsh/aliases.zsh ~/.zsh/aliases.zsh
+	ln -sfv ${DOTFILES_PATH}/.zsh/nvm.zsh ~/.zsh/nvm.zsh
 
 .PHONY: vim
 vim:
@@ -25,6 +27,12 @@ git:
 tmux:
 	ln -sfv ${DOTFILES_PATH}/.tmux.conf ~/.tmux.conf
 
-.PHONY: iterm
-iterm:
-	ln -sfv ${DOTFILES_PATH}/iterm ~/iterm
+.PHONY: iterm2
+iterm2:
+	mkdir -p ~/iterm2
+	ln -sfv ${DOTFILES_PATH}/iterm2/com.googlecode.iterm2.plist ~/iterm2/com.googlecode.iterm2.plist
+
+.PHONY: nvim
+nvim:
+	mkdir -p ~/.config/nvim
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
