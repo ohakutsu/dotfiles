@@ -1,5 +1,7 @@
 # dotfiles
 
+:warning: This repository is under test.
+
 ## Usage
 
 1. Clone this repository to `~/ohakutsu`
