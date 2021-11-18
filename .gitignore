@@ -1,2 +1,4 @@
 .DS_*
+.vscode
+*.log
 ignore_*
