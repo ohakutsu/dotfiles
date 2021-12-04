@@ -12,7 +12,7 @@ zsh:
 	ln -sfv ${DOTFILES_PATH}/.zshrc ~/.zshrc
 	mkdir -p ~/.zsh
 	ln -sfv ${DOTFILES_PATH}/.zsh/aliases.zsh ~/.zsh/aliases.zsh
-	ln -sfv ${DOTFILES_PATH}/.zsh/nvm.zsh ~/.zsh/nvm.zsh
+	ln -sfv ${DOTFILES_PATH}/.zsh/anyenv.zsh ~/.zsh/anyenv.zsh
 
 vim:
 	ln -sfv ${DOTFILES_PATH}/.vimrc ~/.vimrc
