@@ -19,3 +19,9 @@ $ git clone git@github.com:ohakutsu/dotfiles.git
 $ cd ~/ohakutsu/dotfiles
 $ make
 ```
+
+### Setup Hammerspoon
+
+#### Install Hammerspoon ShiftIt
+
+See https://github.com/peterklijn/hammerspoon-shiftit.

@@ -1,6 +1,6 @@
 DOTFILES_PATH=~/ohakutsu/dotfiles
 
-all: brew zsh vim git tmux iterm2 nvim
+all: brew zsh vim git tmux iterm2 nvim hammerspoon
 
 brew:
 	ln -sfv ${DOTFILES_PATH}/.Brewfile ~/.Brewfile
@@ -29,4 +29,8 @@ nvim:
 	mkdir -p ~/.config/nvim
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
 
-.PHONY: all brew zsh vim git tmux iterm2 nvim
+hammerspoon:
+	mkdir -p ~/.hammerspoon
+	ln -sfv ${DOTFILES_PATH}/.hammerspoon/init.lua ~/.hammerspoon/init.lua
+
+.PHONY: all brew zsh vim git tmux iterm2 nvim hammerspoon
