@@ -36,3 +36,9 @@ hammerspoon:
 	ln -sfv ${DOTFILES_PATH}/.hammerspoon/init.lua ~/.hammerspoon/init.lua
 
 .PHONY: all brew zsh vim git tmux iterm2 nvim hammerspoon
+
+format:
+	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
+	prettier --write README.md
+
+.PHONY: format
