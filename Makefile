@@ -7,8 +7,7 @@ brew:
 	brew bundle install --global
 
 zsh:
-	${DOTFILES_PATH}/scripts/install_zplug.sh
-
+	sh ./scripts/install_zplug.sh
 	ln -sfv ${DOTFILES_PATH}/.zshrc ~/.zshrc
 	mkdir -p ~/.zsh
 	ln -sfv ${DOTFILES_PATH}/.zsh/aliases.zsh ~/.zsh/aliases.zsh
