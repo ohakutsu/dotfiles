@@ -29,6 +29,7 @@ iterm2:
 
 nvim:
 	mkdir -p ~/.config/nvim
+	sh ./scripts/install_dein_vim.sh
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
 
 hammerspoon:
