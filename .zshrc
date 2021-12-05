@@ -47,6 +47,8 @@ setopt HIST_REDUCE_BLANKS
 
 setopt CORRECT
 
+setopt GLOB_DOTS
+
 HISTFILE=$HOME/.zsh_history
 
 HISTSIZE=10000
