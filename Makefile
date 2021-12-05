@@ -35,6 +35,11 @@ hammerspoon:
 	mkdir -p ~/.hammerspoon
 	ln -sfv ${DOTFILES_PATH}/.hammerspoon/init.lua ~/.hammerspoon/init.lua
 
+vscode:
+	mkdir -p ~/.vscode
+	ln -sfv ${DOTFILES_PATH}/.vscode/.vimrc ~/.vscode/.vimrc
+	sh ./scripts/install_vscode_extensions.sh
+
 .PHONY: all brew zsh vim git tmux iterm2 nvim hammerspoon
 
 format:

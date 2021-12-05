@@ -1,5 +1,4 @@
 .DS_*
-.vscode
 *.log
 ignore_*
 tmp
