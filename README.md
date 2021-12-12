@@ -25,3 +25,13 @@ $ make
 #### Install Hammerspoon ShiftIt
 
 See https://github.com/peterklijn/hammerspoon-shiftit.
+
+### Setup nvim
+
+#### coc.nvim
+
+Run `init_coc_nvim.vim`
+
+```bash
+$ nvim -S scripts/init_coc_nvim.vim
+```

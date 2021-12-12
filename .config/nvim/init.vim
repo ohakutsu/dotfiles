@@ -19,19 +19,16 @@ endif
 set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
 
 call dein#begin('~/.vim/bundles')
-
 call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
 
-" theme
-call dein#add('itchyny/lightline.vim')
-call dein#add('jacoborus/tender.vim')
+" plugins
+call dein#load_toml('~/.config/nvim/plugins.toml', { 'lazy': 0 })
 
 call dein#add('Shougo/ddc.vim')
 call dein#add('vim-denops/denops.vim')
 call dein#add('Shougo/pum.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
-call dein#add('neoclide/coc.nvim', {'merged': 0 ,'rev': 'release'})
 
 call dein#add('Shougo/ddc-around')
 call dein#add('Shougo/ddc-matcher_head')
@@ -59,21 +56,15 @@ if dein#check_install()
   call dein#install()
 endif
 
-"### tender.vim ###
-if (has("termguicolors"))
- set termguicolors
-endif
-
-let g:lightline = { 'colorscheme': 'tender' }
-
-colorscheme tender
-
 "### options ###
 
 filetype plugin indent on
+set autoindent
+set hlsearch
 set ignorecase
 set number
 set ruler
-set hlsearch
+set shiftwidth=2
 set smartcase
+set smartindent
 syntax enable

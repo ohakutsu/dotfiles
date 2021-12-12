@@ -31,6 +31,8 @@ nvim:
 	mkdir -p ~/.config/nvim
 	sh ./scripts/install_dein_vim.sh
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/plugins.toml ~/.config/nvim/plugins.toml
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 hammerspoon:
 	mkdir -p ~/.hammerspoon
@@ -45,6 +47,6 @@ vscode:
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
-	prettier --write README.md
+	prettier --write **/*.md **/*.toml **/*.json
 
 .PHONY: format
