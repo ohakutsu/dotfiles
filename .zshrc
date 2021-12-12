@@ -1,3 +1,5 @@
+export EDITOR=nvim
+
 ### zplug ###
 
 source ~/.zplug/init.zsh
@@ -33,6 +35,8 @@ zplug load
 # zplug load --verbose
 
 ### zsh options ###
+
+bindkey -e
 
 setopt AUTO_LIST
 
