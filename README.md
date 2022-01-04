@@ -1,4 +1,4 @@
-# dotfiles
+# ohakutsu/dotfiles
 
 :warning: This repository is under test.
 
