@@ -1,12 +1,16 @@
 {
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
-  "editor.fontSize": 14,
+  // "editor.fontSize": 14,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.associations": {
+    "*.cap": "ruby"
+  },
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "$HOME/.vscode/.vimrc",
-  "window.zoomLevel": -1,
+  // "window.zoomLevel": -1,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
