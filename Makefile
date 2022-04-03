@@ -20,6 +20,7 @@ vim:
 	ln -sfv ${DOTFILES_PATH}/.vimrc ~/.vimrc
 
 git:
+	ln -sfv ${DOTFILES_PATH}/.gitignore ~/.gitignore
 	ln -sfv ${DOTFILES_PATH}/.gitconfig ~/.gitconfig
 
 tmux:
