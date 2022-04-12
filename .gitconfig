@@ -5,3 +5,6 @@
 [user]
   name = ohakutsu
   email = dev@ohakutsu.com
+
+[init]
+  defaultBranch = main
