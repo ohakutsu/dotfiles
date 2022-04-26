@@ -7,6 +7,7 @@ source ~/.zplug/init.zsh
 zplug "mafredri/zsh-async"
 
 zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+PURE_GIT_PULL=0
 
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
