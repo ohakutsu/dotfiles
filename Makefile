@@ -30,6 +30,10 @@ iterm2:
 	mkdir -p ~/iterm2
 	ln -sfv ${DOTFILES_PATH}/iterm2/com.googlecode.iterm2.plist ~/iterm2/com.googlecode.iterm2.plist
 
+alacritty:
+	mkdir -p ~/.config/alacritty
+	ln -sfv ${DOTFILES_PATH}/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+
 nvim:
 	mkdir -p ~/.config/nvim
 	sh ./scripts/install_dein_vim.sh
@@ -50,6 +54,6 @@ vscode:
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
-	prettier --write **/*.md **/*.toml **/*.json
+	prettier --write **/*.md **/*.toml **/*.json **/*.yml
 
 .PHONY: format
