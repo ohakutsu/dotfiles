@@ -21,7 +21,8 @@ vim:
 
 git:
 	ln -sfv ${DOTFILES_PATH}/.gitignore ~/.gitignore
-	ln -sfv ${DOTFILES_PATH}/.gitconfig ~/.gitconfig
+	mkdir -p ~/.config/git
+	ln -sfv ${DOTFILES_PATH}/.config/git/ignore ~/.config/git/ignore
 
 tmux:
 	ln -sfv ${DOTFILES_PATH}/.tmux.conf ~/.tmux.conf
