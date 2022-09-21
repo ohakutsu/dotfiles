@@ -1,5 +1,2 @@
 .DS_Store
 .vscode
-*.log
-ignore_*
-tmp
