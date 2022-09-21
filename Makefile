@@ -1,6 +1,6 @@
 DOTFILES_PATH=~/ohakutsu/dotfiles
 
-all: brew zsh vim git tmux iterm2 nvim hammerspoon
+all: brew zsh git tmux nvim hammerspoon
 
 brew:
 	ln -sfv ${DOTFILES_PATH}/.Brewfile ~/.Brewfile
@@ -17,9 +17,6 @@ zsh:
 	ln -sfv ${DOTFILES_PATH}/.zsh/llvm.zsh ~/.zsh/llvm.zsh
 	ln -sfv ${DOTFILES_PATH}/.zsh/rust.zsh ~/.zsh/rust.zsh
 
-vim:
-	ln -sfv ${DOTFILES_PATH}/.vimrc ~/.vimrc
-
 git:
 	mkdir -p ~/.config/git
 	ln -sfv ${DOTFILES_PATH}/.config/git/config ~/.config/git/config
@@ -28,20 +25,13 @@ git:
 tmux:
 	ln -sfv ${DOTFILES_PATH}/.tmux.conf ~/.tmux.conf
 
-iterm2:
-	mkdir -p ~/iterm2
-	ln -sfv ${DOTFILES_PATH}/iterm2/com.googlecode.iterm2.plist ~/iterm2/com.googlecode.iterm2.plist
-
 alacritty:
 	mkdir -p ~/.config/alacritty
 	ln -sfv ${DOTFILES_PATH}/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 nvim:
 	mkdir -p ~/.config/nvim
-	sh ./scripts/install_dein_vim.sh
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/plugins.toml ~/.config/nvim/plugins.toml
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 hammerspoon:
 	mkdir -p ~/.hammerspoon
@@ -52,7 +42,7 @@ vscode:
 	ln -sfv ${DOTFILES_PATH}/.vscode/.vimrc ~/.vscode/.vimrc
 	sh ./scripts/install_vscode_extensions.sh
 
-.PHONY: all brew zsh vim git tmux iterm2 nvim hammerspoon
+.PHONY: all brew zsh git tmux nvim hammerspoon
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
