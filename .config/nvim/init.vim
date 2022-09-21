@@ -1,70 +1,50 @@
-" Initialize
-" Run `CocInstall coc-json`
+""""""""""""""""""""
+" vim-plug
+""""""""""""""""""""
+call plug#begin()
+Plug 'joshdick/onedark.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+Plug 'lotabout/skim.vim'
+call plug#end()
 
-"### memo ###
-
-" split / close window
-" :split / :vsplit
-" :new / :vnew
-" :close
-
-" move window
-" Ctrl-W {h, j, k, l}
-
-"### dein.vim ###
-if &compatible
-  set nocompatible
-endif
-
-set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
-
-call dein#begin('~/.vim/bundles')
-call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
-
-" plugins
-call dein#load_toml('~/.config/nvim/plugins.toml', { 'lazy': 0 })
-
-call dein#add('Shougo/ddc.vim')
-call dein#add('vim-denops/denops.vim')
-call dein#add('Shougo/pum.vim')
-call dein#add('Shougo/neosnippet.vim')
-call dein#add('Shougo/neosnippet-snippets')
-
-call dein#add('Shougo/ddc-around')
-call dein#add('Shougo/ddc-matcher_head')
-call dein#add('Shougo/ddc-sorter_rank')
-
-call ddc#custom#patch_global('completionMenu', 'pum.vim')
-call ddc#custom#patch_global('sources', ['around'])
-call ddc#custom#patch_global('sourceOptions', {
-      \ '_': {
-      \   'matchers': ['matcher_head'],
-      \   'sorters': ['sorter_rank']},
-      \ })
-
-inoremap <silent><expr> <TAB>
-\ pumvisible() ? '<C-n>' :
-\ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
-\ '<TAB>' : ddc#map#manual_complete()
-inoremap <expr><S-TAB>  pumvisible() ? '<C-p>' : '<C-h>'
-
-call ddc#enable()
-
-call dein#end()
-
-if dein#check_install()
-  call dein#install()
-endif
-
-"### options ###
-
-filetype plugin indent on
+""""""""""""""""""""
+" Vim config
+""""""""""""""""""""
+" syntax enable " Enabled by vim-plug
+" filetype plugin indent on " Enabled by vim-plug
 set autoindent
+set backspace=2
+set expandtab
 set hlsearch
 set ignorecase
+set list
 set number
 set ruler
 set shiftwidth=2
+set signcolumn=yes
 set smartcase
-set smartindent
-syntax enable
+set tabstop=2
+
+let mapleader="\<Space>"
+
+""""""""""""""""""""
+" Plugin config
+""""""""""""""""""""
+colorscheme onedark
+
+" asyncomplete.vim
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <CR> pumvisible() ? asyncomplete#close_popup() : "\<CR>"
+nnoremap <silent> <Leader>k :LspHover<CR>
+
+" skim.vim
+nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <Leader>c :Commands<CR>
+nnoremap <silent> <Leader>g :GFiles<CR>
+nnoremap <silent> <Leader>m :Maps<CR>
+nnoremap <silent> <Leader>p :Files<CR>
