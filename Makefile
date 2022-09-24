@@ -1,6 +1,6 @@
 DOTFILES_PATH=~/ohakutsu/dotfiles
 
-all: brew zsh git tmux nvim hammerspoon
+all: brew zsh git tmux alacritty nvim hammerspoon vscode gitui
 
 brew:
 	ln -sfv ${DOTFILES_PATH}/.Brewfile ~/.Brewfile
@@ -42,7 +42,11 @@ vscode:
 	ln -sfv ${DOTFILES_PATH}/.vscode/.vimrc ~/.vscode/.vimrc
 	sh ./scripts/install_vscode_extensions.sh
 
-.PHONY: all brew zsh git tmux nvim hammerspoon
+gitui:
+	mkdir -p ~/.config/gitui
+	ln -sfv ${DOTFILES_PATH}/.config/gitui/key_bindings.ron ~/.config/gitui/key_bindings.ron
+
+.PHONY: all brew zsh git tmux alacritty nvim hammerspoon vscode gitui
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
