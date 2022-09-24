@@ -27,6 +27,8 @@ set ruler
 set shiftwidth=2
 set signcolumn=yes
 set smartcase
+set spell
+set spelllang=en,cjk
 set tabstop=2
 
 let mapleader="\<Space>"
@@ -40,7 +42,9 @@ colorscheme onedark
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <CR> pumvisible() ? asyncomplete#close_popup() : "\<CR>"
-nnoremap <silent> <Leader>k :LspHover<CR>
+nnoremap <silent> <F2> <Plug>(lsp-rename)
+nnoremap <silent> K <Plug>(lsp-hover)
+nnoremap <silent> gd <Plug>(lsp-definition)
 
 " skim.vim
 nnoremap <silent> <Leader>b :Buffers<CR>
