@@ -9,6 +9,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 """"""""""""""""""""
