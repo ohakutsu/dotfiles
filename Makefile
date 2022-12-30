@@ -25,6 +25,10 @@ git:
 tmux:
 	ln -sfv ${DOTFILES_PATH}/.tmux.conf ~/.tmux.conf
 
+zellij:
+	mkdir -p ~/.config/zellij
+	ln -sfv ${DOTFILES_PATH}/.config/zellij/config.kdl ~/.config/zellij/config.kdl
+
 alacritty:
 	mkdir -p ~/.config/alacritty
 	ln -sfv ${DOTFILES_PATH}/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
