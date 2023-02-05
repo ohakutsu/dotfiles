@@ -70,6 +70,3 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
 		[[ ${i##*/} = *.zsh ]] && [ \( -f $i -o -h $i \) -a -r $i ] && . $i
 	done
 fi
-
-# For tmux 3.3
-export TERM=xterm-256color
