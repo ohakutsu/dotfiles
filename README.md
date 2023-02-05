@@ -1,7 +1,6 @@
 # ohakutsu/dotfiles
 
 :warning: This repository is under test.
-
 ## Usage
 
 1. Clone this repository to `~/ohakutsu`
@@ -19,9 +18,3 @@ $ git clone git@github.com:ohakutsu/dotfiles.git
 $ cd ~/ohakutsu/dotfiles
 $ make
 ```
-
-### Setup Hammerspoon
-
-#### Install Hammerspoon ShiftIt
-
-See https://github.com/peterklijn/hammerspoon-shiftit.

@@ -1,6 +1,6 @@
 DOTFILES_PATH=~/ohakutsu/dotfiles
 
-all: brew zsh git zellij alacritty nvim hammerspoon vscode gitui
+all: brew zsh git zellij alacritty nvim vscode gitui
 
 brew:
 	ln -sfv ${DOTFILES_PATH}/.Brewfile ~/.Brewfile
@@ -35,10 +35,6 @@ nvim:
 	mkdir -p ~/.config/nvim
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
 
-hammerspoon:
-	mkdir -p ~/.hammerspoon
-	ln -sfv ${DOTFILES_PATH}/.hammerspoon/init.lua ~/.hammerspoon/init.lua
-
 vscode:
 	mkdir -p ~/.vscode
 	ln -sfv ${DOTFILES_PATH}/.vscode/.vimrc ~/.vscode/.vimrc
@@ -48,7 +44,7 @@ gitui:
 	mkdir -p ~/.config/gitui
 	ln -sfv ${DOTFILES_PATH}/.config/gitui/key_bindings.ron ~/.config/gitui/key_bindings.ron
 
-.PHONY: all brew zsh git zellij alacritty nvim hammerspoon vscode gitui
+.PHONY: all brew zsh git zellij alacritty nvim vscode gitui
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
