@@ -16,6 +16,7 @@ zsh:
 	ln -sfv ${DOTFILES_PATH}/.zsh/holidays.zsh ~/.zsh/holidays.zsh
 	ln -sfv ${DOTFILES_PATH}/.zsh/llvm.zsh ~/.zsh/llvm.zsh
 	ln -sfv ${DOTFILES_PATH}/.zsh/op.zsh ~/.zsh/op.zsh
+	ln -sfv ${DOTFILES_PATH}/.zsh/pbcopy.zsh ~/.zsh/pbcopy.zsh
 	ln -sfv ${DOTFILES_PATH}/.zsh/rust.zsh ~/.zsh/rust.zsh
 
 git:
