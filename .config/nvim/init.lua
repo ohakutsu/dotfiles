@@ -49,9 +49,9 @@ vim.keymap.set('i', '<S-Tab>', function()
   return '<S-Tab>'
 end, { expr = true })
 vim.keymap.set('i', '<CR>', function()
-  if vim.fn.pumvisible() == 1 then return vim.call('asyncomplete#close_popup') end
+  if vim.fn.pumvisible() == 1 then return vim.fn['asyncomplete#close_popup']() end
   return '<CR>'
-end)
+end, { expr = true })
 vim.keymap.set('n', '<F2>', '<Plug>(lsp-rename)', { silent = true })
 vim.keymap.set('n', 'K', '<Plug>(lsp-hover)', { silent = true })
 vim.keymap.set('n', 'gd', '<Plug>(lsp-definition)', { silent = true })
