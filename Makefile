@@ -34,7 +34,7 @@ alacritty:
 
 nvim:
 	mkdir -p ~/.config/nvim
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.vim ~/.config/nvim/init.vim
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.lua ~/.config/nvim/init.lua
 
 vscode:
 	mkdir -p ~/.vscode
