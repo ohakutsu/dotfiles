@@ -58,3 +58,21 @@ vim.keymap.set("n", "<Leader>p", "<Cmd>Files<CR>", { silent = true })
 -- nerdtree
 vim.keymap.set("n", "<Leader>n", "<Cmd>NERDTreeFocus<CR>", { silent = true })
 vim.keymap.set("n", "<C-b>", "<Cmd>NERDTreeToggle<CR>", { silent = true })
+vim.g.NERDTreeShowHidden = 1
+
+-- nvim-treesitter
+require("nvim-treesitter.configs").setup({
+	ensure_installed = { "lua", "ruby", "rust" },
+	sync_install = true,
+
+	highlight = {
+		enable = true,
+	},
+})
+
+-- nvim-treesitter-endwise
+require("nvim-treesitter.configs").setup({
+	endwise = {
+		enable = true,
+	},
+})

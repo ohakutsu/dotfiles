@@ -14,4 +14,13 @@ return require("packer").startup(function(use)
 	use("junegunn/fzf.vim")
 	use("airblade/vim-gitgutter")
 	use("preservim/nerdtree")
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = function()
+			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			ts_update()
+		end,
+	})
+	use("RRethy/nvim-treesitter-endwise")
+	use("cohama/lexima.vim")
 end)
