@@ -35,9 +35,10 @@ alacritty:
 nvim:
 	mkdir -p ~/.config/nvim
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.lua ~/.config/nvim/init.lua
-	mkdir -p ~/.config/nvim/lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/plugins.lua ~/.config/nvim/lua/plugins.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/lsp.lua ~/.config/nvim/lua/lsp.lua
+	mkdir -p ~/.config/nvim/lua/user
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/plugins.lua ~/.config/nvim/lua/user/plugins.lua
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/lsp.lua ~/.config/nvim/lua/user/lsp.lua
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/telescope.lua ~/.config/nvim/lua/user/telescope.lua
 
 vscode:
 	mkdir -p ~/.vscode

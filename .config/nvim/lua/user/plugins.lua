@@ -13,12 +13,9 @@ return require("packer").startup(function(use)
 	use("hrsh7th/vim-vsnip")
 
 	use({
-		"junegunn/fzf",
-		run = function()
-			vim.call("fzf#install")
-		end,
+		"nvim-telescope/telescope.nvim",
+		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use("junegunn/fzf.vim")
 
 	use("airblade/vim-gitgutter")
 
