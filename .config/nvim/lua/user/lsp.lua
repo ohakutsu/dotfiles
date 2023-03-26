@@ -43,6 +43,6 @@ local keymap_opts = {
 }
 vim.keymap.set("n", "K", vim.lsp.buf.hover, keymap_opts)
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, keymap_opts)
-vim.keymap.set("n", "<Leader>f", vim.lsp.buf.format, keymap_opts)
-vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, keymap_opts)
-vim.keymap.set("n", "<Leader>e", vim.diagnostic.open_float, keymap_opts)
+vim.keymap.set("n", "gf", vim.lsp.buf.format, keymap_opts)
+vim.keymap.set("n", "gn", vim.lsp.buf.rename, keymap_opts)
+vim.keymap.set("n", "ge", vim.diagnostic.open_float, keymap_opts)
