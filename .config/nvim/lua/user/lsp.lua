@@ -37,6 +37,14 @@ cmp.setup({
 	}),
 })
 
+local border_style = "rounded"
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+	border = border_style,
+})
+vim.diagnostic.config({
+	float = { border = border_style },
+})
+
 local keymap_opts = {
 	noremap = true,
 	silent = true,
