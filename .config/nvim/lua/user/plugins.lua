@@ -31,4 +31,6 @@ return require("packer").startup(function(use)
 	use("RRethy/nvim-treesitter-endwise")
 
 	use("cohama/lexima.vim")
+
+	use({ "rust-lang/rust.vim", ft = { "rust" } })
 end)

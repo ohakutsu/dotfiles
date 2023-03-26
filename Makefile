@@ -39,6 +39,7 @@ nvim:
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/plugins.lua ~/.config/nvim/lua/user/plugins.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/lsp.lua ~/.config/nvim/lua/user/lsp.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/telescope.lua ~/.config/nvim/lua/user/telescope.lua
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/treesitter.lua ~/.config/nvim/lua/user/treesitter.lua
 
 vscode:
 	mkdir -p ~/.vscode
