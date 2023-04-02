@@ -5,7 +5,7 @@ local config = require("telescope.config")
 local vimgrep_arguments = { unpack(config.values.vimgrep_arguments) }
 table.insert(vimgrep_arguments, "--hidden")
 table.insert(vimgrep_arguments, "--glob")
-table.insert(vimgrep_arguments, "!**/{.git,node_modules}/*")
+table.insert(vimgrep_arguments, "!**/{.git,node_modules,target}/*")
 
 require("telescope").setup({
 	defaults = {
@@ -13,7 +13,7 @@ require("telescope").setup({
 	},
 	pickers = {
 		find_files = {
-			hidden = true,
+			find_command = { "rg", "--files", "--hidden", "--glob", "!**/{.git,node_modules,target}/*" },
 		},
 	},
 })
