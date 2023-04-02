@@ -9,11 +9,19 @@ table.insert(vimgrep_arguments, "!**/{.git,node_modules,target}/*")
 
 require("telescope").setup({
 	defaults = {
+		mappings = {
+			i = {
+				["<Esc>"] = actions.close,
+			},
+		},
 		vimgrep_arguments = vimgrep_arguments,
 	},
 	pickers = {
 		find_files = {
 			find_command = { "rg", "--files", "--hidden", "--glob", "!**/{.git,node_modules,target}/*" },
+		},
+		buffers = {
+			sort_lastused = true,
 		},
 	},
 })
@@ -24,3 +32,4 @@ vim.keymap.set("n", "<Leader>g", builtin.live_grep)
 vim.keymap.set("n", "<Leader>h", builtin.help_tags)
 vim.keymap.set("n", "<Leader>o", builtin.oldfiles)
 vim.keymap.set("n", "<Leader>p", builtin.find_files)
+vim.keymap.set("n", "<Leader>r", builtin.registers)
