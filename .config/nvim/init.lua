@@ -15,6 +15,7 @@ vim.opt.ignorecase = true
 vim.opt.list = true
 vim.opt.number = true
 vim.opt.ruler = true
+vim.opt.shell = "zsh"
 vim.opt.shiftwidth = 2
 vim.opt.showcmd = true
 vim.opt.signcolumn = "yes"
@@ -26,6 +27,9 @@ vim.opt.tabstop = 2
 vim.cmd("syntax enable")
 vim.cmd("filetype plugin indent on")
 vim.cmd("colorscheme sonokai")
+
+-- terminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- nerdtree
 vim.keymap.set("n", "<Leader>n", "<Cmd>NERDTreeFocus<CR>", { silent = true })
