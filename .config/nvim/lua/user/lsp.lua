@@ -16,6 +16,9 @@ lspconfig.rust_analyzer.setup({
 lspconfig.solargraph.setup({
 	capabilities = capabilities,
 })
+lspconfig.clangd.setup({
+	capabilities = capabilities,
+})
 
 local cmp = require("cmp")
 cmp.setup({
