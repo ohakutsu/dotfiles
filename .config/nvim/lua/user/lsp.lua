@@ -19,6 +19,15 @@ lspconfig.solargraph.setup({
 lspconfig.clangd.setup({
 	capabilities = capabilities,
 })
+lspconfig.html.setup({
+	capabilities = capabilities,
+})
+lspconfig.lemminx.setup({
+	capabilities = capabilities,
+})
+lspconfig.pyright.setup({
+	capabilities = capabilities,
+})
 
 local cmp = require("cmp")
 cmp.setup({
