@@ -54,6 +54,6 @@ gitui:
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
-	prettier --write **/*.md **/*.toml **/*.json **/*.yml
+	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.toml **/*.json **/*.yml
 
 .PHONY: format
