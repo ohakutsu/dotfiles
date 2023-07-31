@@ -70,3 +70,5 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
 		[[ ${i##*/} = *.zsh ]] && [ \( -f $i -o -h $i \) -a -r $i ] && . $i
 	done
 fi
+
+PURE_PROMPT_SYMBOL="$(printf "\xF4\x80\x82\xAF oO")"
