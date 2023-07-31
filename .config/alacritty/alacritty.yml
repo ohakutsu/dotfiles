@@ -9,6 +9,8 @@ scrolling:
 
 font:
   size: 14.0
+  normal:
+    family: "ZUTOMOJI_HG35C"
 
 # Colors (Monokai Pro)
 colors:
