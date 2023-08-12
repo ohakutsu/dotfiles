@@ -35,4 +35,6 @@ return require("packer").startup(function(use)
 	use({ "rust-lang/rust.vim", ft = { "rust" } })
 
 	use("github/copilot.vim")
+
+	use("terrortylor/nvim-comment")
 end)

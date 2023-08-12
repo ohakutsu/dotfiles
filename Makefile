@@ -40,6 +40,7 @@ nvim:
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/lsp.lua ~/.config/nvim/lua/user/lsp.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/telescope.lua ~/.config/nvim/lua/user/telescope.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/treesitter.lua ~/.config/nvim/lua/user/treesitter.lua
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/nvim-comment.lua ~/.config/nvim/lua/user/nvim-comment.lua
 
 vscode:
 	mkdir -p ~/.vscode
@@ -55,5 +56,6 @@ gitui:
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
 	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.toml **/*.json **/*.yml
+	stylua --verbose --verify --glob **/*.lua -- .config/nvim
 
 .PHONY: format

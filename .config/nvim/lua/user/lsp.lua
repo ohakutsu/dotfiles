@@ -67,3 +67,6 @@ vim.keymap.set("n", "ge", vim.diagnostic.open_float, keymap_opts)
 vim.keymap.set("n", "gf", vim.lsp.buf.format, keymap_opts)
 vim.keymap.set("n", "gn", vim.lsp.buf.rename, keymap_opts)
 vim.keymap.set("n", "gr", vim.lsp.buf.references, keymap_opts)
+
+-- Debug
+-- vim.lsp.set_log_level("DEBUG")

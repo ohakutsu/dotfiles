@@ -4,6 +4,7 @@ require("user.plugins")
 require("user.lsp")
 require("user.telescope")
 require("user.treesitter")
+require("user.nvim-comment")
 
 --[[ vim config ]]
 vim.opt.autoindent = true
