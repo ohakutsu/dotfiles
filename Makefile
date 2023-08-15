@@ -41,7 +41,6 @@ nvim:
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/telescope.lua ~/.config/nvim/lua/user/telescope.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/treesitter.lua ~/.config/nvim/lua/user/treesitter.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/nvim-comment.lua ~/.config/nvim/lua/user/nvim-comment.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/socks-copy-path.lua ~/.config/nvim/lua/user/socks-copy-path.lua
 
 vscode:
 	mkdir -p ~/.vscode
