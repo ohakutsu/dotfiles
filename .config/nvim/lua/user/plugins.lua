@@ -43,4 +43,11 @@ return require("packer").startup(function(use)
 	use("github/copilot.vim")
 
 	use("terrortylor/nvim-comment")
+
+	use({
+		"ohakutsu/socks-copypath.nvim",
+		config = function()
+			require("socks-copypath").setup()
+		end,
+	})
 end)
