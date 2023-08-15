@@ -1,6 +1,7 @@
 local actions = require("telescope.actions")
 local builtin = require("telescope.builtin")
 local config = require("telescope.config")
+local telescope = require("telescope")
 
 local vimgrep_arguments = { unpack(config.values.vimgrep_arguments) }
 table.insert(vimgrep_arguments, "--hidden")
@@ -34,3 +35,4 @@ vim.keymap.set("n", "<Leader>o", builtin.oldfiles)
 vim.keymap.set("n", "<Leader>p", builtin.find_files)
 vim.keymap.set("n", "<Leader>r", builtin.registers)
 vim.keymap.set("n", "<Leader>g", builtin.grep_string)
+vim.keymap.set("n", "<Leader>fg", telescope.extensions.live_grep_args.live_grep_args)
