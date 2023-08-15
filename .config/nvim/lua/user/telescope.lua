@@ -29,10 +29,11 @@ require("telescope").setup({
 
 vim.keymap.set("n", "<Leader>b", builtin.buffers)
 vim.keymap.set("n", "<Leader>c", builtin.commands)
-vim.keymap.set("n", "<Leader>G", builtin.live_grep)
+vim.keymap.set("n", "<Leader>g", builtin.live_grep)
 vim.keymap.set("n", "<Leader>h", builtin.help_tags)
 vim.keymap.set("n", "<Leader>o", builtin.oldfiles)
 vim.keymap.set("n", "<Leader>p", builtin.find_files)
 vim.keymap.set("n", "<Leader>r", builtin.registers)
-vim.keymap.set("n", "<Leader>g", builtin.grep_string)
+vim.keymap.set("n", "<Leader>#", builtin.grep_string)
+vim.keymap.set("n", "<Leader>*", builtin.grep_string)
 vim.keymap.set("n", "<Leader>fg", telescope.extensions.live_grep_args.live_grep_args)
