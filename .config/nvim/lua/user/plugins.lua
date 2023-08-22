@@ -39,6 +39,7 @@ return require("packer").startup(function(use)
 	use("cohama/lexima.vim")
 
 	use({ "rust-lang/rust.vim", ft = { "rust" } })
+	use({ "slim-template/vim-slim", ft = { "slim" } })
 
 	use("github/copilot.vim")
 
