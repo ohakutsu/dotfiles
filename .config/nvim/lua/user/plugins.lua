@@ -24,6 +24,16 @@ return require("packer").startup(function(use)
 	})
 
 	use("airblade/vim-gitgutter")
+	use({
+		"f-person/git-blame.nvim",
+		config = function()
+			require("gitblame").setup({
+				enabled = true,
+				message_template = "      <author>, <date> • <summary> • <sha>",
+				date_format = "%r",
+			})
+		end,
+	})
 
 	use("preservim/nerdtree")
 
