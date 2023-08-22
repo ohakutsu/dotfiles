@@ -42,6 +42,10 @@ nvim:
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/treesitter.lua ~/.config/nvim/lua/user/treesitter.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/nvim-comment.lua ~/.config/nvim/lua/user/nvim-comment.lua
 
+efm-langserver:
+	mkdir -p ~/.config/efm-langserver
+	ln -sfv ${DOTFILES_PATH}/.config/efm-langserver/config.yaml ~/.config/efm-langserver/config.yaml
+
 vscode:
 	mkdir -p ~/.vscode
 	ln -sfv ${DOTFILES_PATH}/.vscode/.vimrc ~/.vscode/.vimrc
@@ -55,7 +59,7 @@ gitui:
 
 format:
 	shfmt -w .zsh/*.zsh .zshrc scripts/*.sh
-	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.toml **/*.json **/*.yml
+	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.toml **/*.json **/*.yml **/*.yaml
 	stylua --verbose --verify --glob **/*.lua -- .config/nvim
 
 .PHONY: format

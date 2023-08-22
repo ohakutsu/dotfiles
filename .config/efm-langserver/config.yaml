@@ -1,0 +1,27 @@
+version: 2
+tools:
+  javascript-prettier: &javascript-prettier
+    format-command: "/usr/bin/env prettier --parser typescript"
+  json-prettier: &json-prettier
+    format-command: "/usr/bin/env prettier --parser json"
+  yaml-prettier: &yaml-prettier
+    format-command: "/usr/bin/env prettier --parser yaml"
+  markdown-prettier: &markdown-prettier
+    format-command: "/usr/bin/env prettier --parser markdown"
+  stylua: &stylua
+    format-command: "/usr/bin/env stylua -"
+    format-stdin: true
+
+languages:
+  javascript:
+    - <<: *javascript-prettier
+  typescript:
+    - <<: *javascript-prettier
+  json:
+    - <<: *json-prettier
+  yaml:
+    - <<: *yaml-prettier
+  markdown:
+    - <<: *markdown-prettier
+  lua:
+    - <<: *stylua

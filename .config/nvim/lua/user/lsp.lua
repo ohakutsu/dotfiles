@@ -28,6 +28,9 @@ lspconfig.lemminx.setup({
 lspconfig.pyright.setup({
 	capabilities = capabilities,
 })
+lspconfig.efm.setup({
+	init_options = { documentFormatting = true },
+})
 
 local cmp = require("cmp")
 cmp.setup({
