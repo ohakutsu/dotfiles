@@ -17,6 +17,8 @@ languages:
     - <<: *javascript-prettier
   typescript:
     - <<: *javascript-prettier
+  typescriptreact:
+    - <<: *javascript-prettier
   json:
     - <<: *json-prettier
   yaml:
