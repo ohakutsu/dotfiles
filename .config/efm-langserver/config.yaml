@@ -2,12 +2,16 @@ version: 2
 tools:
   javascript-prettier: &javascript-prettier
     format-command: "/usr/bin/env prettier --parser typescript"
+    format-stdin: true
   json-prettier: &json-prettier
     format-command: "/usr/bin/env prettier --parser json"
+    format-stdin: true
   yaml-prettier: &yaml-prettier
     format-command: "/usr/bin/env prettier --parser yaml"
+    format-stdin: true
   markdown-prettier: &markdown-prettier
     format-command: "/usr/bin/env prettier --parser markdown"
+    format-stdin: true
   stylua: &stylua
     format-command: "/usr/bin/env stylua -"
     format-stdin: true
