@@ -43,10 +43,6 @@ nvim:
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/nvim-comment.lua ~/.config/nvim/lua/user/nvim-comment.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/efm-langserver.lua ~/.config/nvim/lua/user/efm-langserver.lua
 
-efm-langserver:
-	mkdir -p ~/.config/efm-langserver
-	ln -sfv ${DOTFILES_PATH}/.config/efm-langserver/config.yaml ~/.config/efm-langserver/config.yaml
-
 vscode:
 	mkdir -p ~/.vscode
 	ln -sfv ${DOTFILES_PATH}/.vscode/.vimrc ~/.vscode/.vimrc
