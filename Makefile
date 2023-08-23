@@ -41,6 +41,7 @@ nvim:
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/telescope.lua ~/.config/nvim/lua/user/telescope.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/treesitter.lua ~/.config/nvim/lua/user/treesitter.lua
 	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/nvim-comment.lua ~/.config/nvim/lua/user/nvim-comment.lua
+	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/efm-langserver.lua ~/.config/nvim/lua/user/efm-langserver.lua
 
 efm-langserver:
 	mkdir -p ~/.config/efm-langserver
