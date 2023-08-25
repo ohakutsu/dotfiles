@@ -6,17 +6,8 @@ local eslint = require("efmls-configs.linters.eslint")
 local prettier = require("efmls-configs.formatters.prettier")
 local rubocop = require("efmls-configs.linters.rubocop")
 local shellcheck = require("efmls-configs.linters.shellcheck")
+local slim_lint = require("efmls-configs.linters.slim_lint")
 local stylua = require("efmls-configs.formatters.stylua")
-
-local slimlint = {
-	prefix = "slim-lint",
-	lintCommand = string.format("%s --stdin-file-path ${INPUT}", fs.executable("slim-lint", fs.Scope.BUNDLE)),
-	lintStdin = true,
-	lintFormats = {
-		"%f:%l [%t] %m",
-	},
-	rootMarkers = {},
-}
 
 local languages = {
 	bash = { shellcheck },
@@ -26,7 +17,7 @@ local languages = {
 	markdown = { prettier },
 	ruby = { rubocop },
 	sh = { shellcheck },
-	slim = { slimlint },
+	slim = { slim_lint },
 	typescript = { eslint, prettier },
 	typescriptreact = { eslint, prettier },
 	yaml = { prettier },
