@@ -29,6 +29,9 @@ lspconfig.pyright.setup({
 	capabilities = capabilities,
 })
 lspconfig.efm.setup(require("user.efm-langserver").config)
+lspconfig.terraformls.setup({
+	capabilities = capabilities,
+})
 
 local cmp = require("cmp")
 cmp.setup({
