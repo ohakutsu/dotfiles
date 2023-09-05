@@ -1,10 +1,6 @@
 vim.g.mapleader = " " -- <Space>
 
-require("user.plugins")
-require("user.lsp")
-require("user.telescope")
-require("user.treesitter")
-require("user.nvim-comment")
+require("user.lazy-nvim")
 
 --[[ vim config ]]
 vim.opt.autoindent = true
@@ -31,8 +27,3 @@ vim.cmd("colorscheme sonokai")
 
 -- terminal mode
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-
--- nerdtree
-vim.keymap.set("n", "<Leader>n", "<Cmd>NERDTreeFocus<CR>", { silent = true })
-vim.keymap.set("n", "<C-b>", "<Cmd>NERDTreeToggle<CR>", { silent = true })
-vim.g.NERDTreeShowHidden = 1

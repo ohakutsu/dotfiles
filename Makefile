@@ -33,15 +33,8 @@ alacritty:
 	ln -sfv ${DOTFILES_PATH}/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 nvim:
-	mkdir -p ~/.config/nvim
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/init.lua ~/.config/nvim/init.lua
-	mkdir -p ~/.config/nvim/lua/user
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/plugins.lua ~/.config/nvim/lua/user/plugins.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/lsp.lua ~/.config/nvim/lua/user/lsp.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/telescope.lua ~/.config/nvim/lua/user/telescope.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/treesitter.lua ~/.config/nvim/lua/user/treesitter.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/nvim-comment.lua ~/.config/nvim/lua/user/nvim-comment.lua
-	ln -sfv ${DOTFILES_PATH}/.config/nvim/lua/user/efm-langserver.lua ~/.config/nvim/lua/user/efm-langserver.lua
+	mkdir -p ~/.config
+	ln -shfv ${DOTFILES_PATH}/.config/nvim ~/.config/nvim
 
 vscode:
 	mkdir -p ~/.vscode

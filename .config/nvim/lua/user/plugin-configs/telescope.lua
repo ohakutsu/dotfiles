@@ -1,3 +1,5 @@
+require("telescope").load_extension("live_grep_args")
+
 local actions = require("telescope.actions")
 local builtin = require("telescope.builtin")
 local config = require("telescope.config")
