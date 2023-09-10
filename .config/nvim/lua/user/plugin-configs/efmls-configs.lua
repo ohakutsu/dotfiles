@@ -7,6 +7,12 @@ local shellcheck = require("efmls-configs.linters.shellcheck")
 local slim_lint = require("efmls-configs.linters.slim_lint")
 local stylua = require("efmls-configs.formatters.stylua")
 
+local sql_formatter_config = string.format("%s/.sql-formatter.json", vim.fn.expand("<sfile>:p:h"))
+local sql_formatter = {
+  formatCommand = string.format("sql-formatter --config %s", sql_formatter_config),
+  formatStdin = true,
+}
+
 local M = {}
 
 local languages = {
@@ -18,6 +24,7 @@ local languages = {
   ruby = { rubocop },
   sh = { shellcheck },
   slim = { slim_lint },
+  sql = { sql_formatter },
   typescript = { eslint, prettier },
   typescriptreact = { eslint, prettier },
   yaml = { prettier },
