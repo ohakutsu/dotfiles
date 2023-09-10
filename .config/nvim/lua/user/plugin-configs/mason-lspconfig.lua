@@ -9,6 +9,7 @@ local on_attach = function(client, bufnr)
     buffer = bufnr,
   }
 
+  vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "ge", vim.diagnostic.open_float, opts)
@@ -56,4 +57,7 @@ lspconfig.terraformls.setup({
   on_attach = on_attach,
 })
 
-lspconfig.efm.setup(require("user.plugin-configs.efmls-configs").config)
+lspconfig.efm.setup(vim.tbl_extend("force", require("user.plugin-configs.efmls-configs").config, {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}))
