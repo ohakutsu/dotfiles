@@ -7,6 +7,35 @@ local lsp_names = function()
   return table.concat(client_names, ", ")
 end
 
+local obenkyo = "\xf4\x80\x82\xa8"
+local uniguri = "\xf4\x80\x82\xa9"
+local tsurugi = "\xf4\x80\x82\xaa"
+local shooter = "\xf4\x80\x82\xab"
+local saturn = "\xf4\x80\x82\xad"
+local neko = "\xf4\x80\x82\xaf"
+local syamoji = "\xf4\x80\x82\xb0"
+
+local ztmy_moji_map = {
+  ["NORMAL"] = neko,
+  ["VISUAL"] = uniguri,
+  ["V-LINE"] = shooter,
+  ["V-BLOCK"] = tsurugi,
+  ["INSERT"] = syamoji,
+  ["COMMAND"] = obenkyo,
+  ["TERMINAL"] = saturn,
+}
+local mode = {
+  "mode",
+  fmt = function(str)
+    local icon = ztmy_moji_map[str]
+    if icon == nil then
+      return str
+    end
+
+    return string.format("%s %s", icon, str)
+  end,
+}
+
 local filename = {
   "filename",
   path = 1, -- 1: Relative path
@@ -26,7 +55,7 @@ lualine.setup({
     },
   },
   sections = {
-    lualine_a = { "mode" },
+    lualine_a = { mode },
     lualine_b = { "branch", "diff", "diagnostics" },
     lualine_c = { filename },
     lualine_x = { lsp_names },
