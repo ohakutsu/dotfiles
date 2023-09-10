@@ -11,22 +11,22 @@ table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/{.git,node_modules,target}/*")
 
 require("telescope").setup({
-	defaults = {
-		mappings = {
-			i = {
-				["<Esc>"] = actions.close,
-			},
-		},
-		vimgrep_arguments = vimgrep_arguments,
-	},
-	pickers = {
-		find_files = {
-			find_command = { "rg", "--files", "--hidden", "--glob", "!**/{.git,node_modules,target}/*" },
-		},
-		buffers = {
-			sort_lastused = true,
-		},
-	},
+  defaults = {
+    mappings = {
+      i = {
+        ["<Esc>"] = actions.close,
+      },
+    },
+    vimgrep_arguments = vimgrep_arguments,
+  },
+  pickers = {
+    find_files = {
+      find_command = { "rg", "--files", "--hidden", "--glob", "!**/{.git,node_modules,target}/*" },
+    },
+    buffers = {
+      sort_lastused = true,
+    },
+  },
 })
 
 vim.keymap.set("n", "<Leader>b", builtin.buffers)
