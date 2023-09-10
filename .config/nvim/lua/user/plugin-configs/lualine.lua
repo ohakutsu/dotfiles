@@ -7,6 +7,11 @@ local lsp_names = function()
 	return table.concat(client_names, ", ")
 end
 
+local filename = {
+	"filename",
+	path = 1, -- 1: Relative path
+}
+
 local lualine = require("lualine")
 lualine.setup({
 	options = {
@@ -23,7 +28,7 @@ lualine.setup({
 	sections = {
 		lualine_a = { "mode" },
 		lualine_b = { "branch", "diff", "diagnostics" },
-		lualine_c = { "filename" },
+		lualine_c = { filename },
 		lualine_x = { lsp_names },
 		lualine_y = { "encoding", "filetype" },
 		lualine_z = { "location" },
@@ -31,7 +36,7 @@ lualine.setup({
 	inactive_sections = {
 		lualine_a = {},
 		lualine_b = {},
-		lualine_c = { "filename" },
+		lualine_c = { filename },
 		lualine_x = { "location" },
 		lualine_y = {},
 		lualine_z = {},
