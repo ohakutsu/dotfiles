@@ -13,8 +13,8 @@ table.insert(vimgrep_arguments, "!**/{.git,node_modules,target}/*")
 require("telescope").setup({
   defaults = {
     mappings = {
-      i = {
-        ["<Esc>"] = actions.close,
+      n = {
+        ["<Esc><Esc>"] = actions.close,
       },
     },
     vimgrep_arguments = vimgrep_arguments,
