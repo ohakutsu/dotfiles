@@ -19,6 +19,7 @@ local languages = {
   bash = { shellcheck },
   javascript = { eslint, prettier },
   json = { prettier },
+  jsonc = { prettier },
   lua = { stylua },
   markdown = { prettier },
   ruby = { rubocop },
