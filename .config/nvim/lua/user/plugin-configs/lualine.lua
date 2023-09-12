@@ -9,20 +9,18 @@ end
 
 local obenkyo = "\xf4\x80\x82\xa8"
 local uniguri = "\xf4\x80\x82\xa9"
-local tsurugi = "\xf4\x80\x82\xaa"
-local shooter = "\xf4\x80\x82\xab"
 local saturn = "\xf4\x80\x82\xad"
 local neko = "\xf4\x80\x82\xaf"
 local syamoji = "\xf4\x80\x82\xb0"
 
 local ztmy_moji_map = {
   ["NORMAL"] = neko,
-  ["VISUAL"] = uniguri,
-  ["V-LINE"] = shooter,
-  ["V-BLOCK"] = tsurugi,
+  ["VISUAL"] = saturn,
+  ["V-LINE"] = saturn,
+  ["V-BLOCK"] = saturn,
   ["INSERT"] = syamoji,
   ["COMMAND"] = obenkyo,
-  ["TERMINAL"] = saturn,
+  ["TERMINAL"] = uniguri,
 }
 local mode = {
   "mode",
