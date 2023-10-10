@@ -19,6 +19,7 @@ for _, lang in ipairs({ "javascript" }) do
         "${workspaceFolder}/**",
         "!**/node_modules/**",
       },
+      sourceMaps = true,
     },
   }
 end
