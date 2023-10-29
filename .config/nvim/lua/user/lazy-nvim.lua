@@ -45,6 +45,13 @@ require("lazy").setup({
   },
 
   {
+    "dense-analysis/ale",
+    config = function()
+      require("user.plugin-configs.ale")
+    end,
+  },
+
+  {
     "mfussenegger/nvim-dap",
     config = function()
       require("user.plugin-configs.nvim-dap")
