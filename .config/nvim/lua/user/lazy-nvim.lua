@@ -29,7 +29,6 @@ require("lazy").setup({
       require("user.plugin-configs.mason-lspconfig")
     end,
   },
-  { "creativenull/efmls-configs-nvim" },
 
   {
     "hrsh7th/nvim-cmp",

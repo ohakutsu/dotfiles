@@ -60,8 +60,3 @@ lspconfig.terraformls.setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
-
-lspconfig.efm.setup(vim.tbl_extend("force", require("user.plugin-configs.efmls-configs").config, {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}))
