@@ -1,3 +1,18 @@
+vim.g.ale_linters = {
+  bash = { "shellcheck" },
+  javascript = { "eslint", "prettier" },
+  json = { "prettier" },
+  jsonc = { "prettier" },
+  lua = { "stylua" },
+  markdown = { "prettier" },
+  ruby = { "rubocop" },
+  sh = { "shellcheck" },
+  slim = { "slim-lint" },
+  sql = {},
+  typescript = { "eslint", "prettier" },
+  typescriptreact = { "eslint", "prettier" },
+  yaml = { "prettier" },
+}
 vim.g.ale_fixers = {
   bash = { "shellcheck" },
   javascript = { "eslint", "prettier" },
