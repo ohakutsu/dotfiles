@@ -124,6 +124,7 @@ require("lazy").setup({
 
   { "rust-lang/rust.vim", ft = { "rust" } },
   { "slim-template/vim-slim", ft = { "slim" } },
+  { "andres-lowrie/vim-sqlx" },
 
   { "github/copilot.vim" },
 
