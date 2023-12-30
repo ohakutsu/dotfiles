@@ -29,8 +29,8 @@ zellij:
 	ln -sfv ${DOTFILES_PATH}/.config/zellij/config.kdl ~/.config/zellij/config.kdl
 
 alacritty:
-	mkdir -p ~/.config/alacritty
-	ln -sfv ${DOTFILES_PATH}/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+	mkdir -p ~/.config
+	ln -shfv ${DOTFILES_PATH}/.config/alacritty ~/.config/alacritty
 
 nvim:
 	mkdir -p ~/.config
