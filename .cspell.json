@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "dictionaries": ["en_US"],
+  "ignorePaths": ["node_modules"],
+  "dictionaryDefinitions": [
+    {
+      "name": "my-rust",
+      "path": "~/.config/cspell/rust.txt"
+    }
+  ],
+  "languageSettings": [
+    {
+      "languageId": "rust",
+      "dictionaries": ["rust", "my-rust"]
+    }
+  ]
+}

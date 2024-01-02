@@ -41,6 +41,11 @@ gitui:
 	mkdir -p ~/.config/gitui
 	ln -sfv ${DOTFILES_PATH}/.config/gitui/key_bindings.ron ~/.config/gitui/key_bindings.ron
 
+cspell:
+	ln -sfv ${DOTFILES_PATH}/.cspell.json ~/.config/.cspell.json
+	mkdir -p ~/.config
+	ln -shfv ${DOTFILES_PATH}/.config/cspell ~/.config/cspell
+
 .PHONY: all brew zsh git zellij alacritty nvim vscode gitui
 
 format:
