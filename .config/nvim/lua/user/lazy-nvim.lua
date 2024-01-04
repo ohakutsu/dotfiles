@@ -63,19 +63,19 @@ require("lazy").setup({
       require("user.plugin-configs.nvim-dap-ui")
     end,
   },
-  {
-    "mxsdev/nvim-dap-vscode-js",
-    config = function()
-      require("user.plugin-configs.nvim-dap-vscode-js")
-    end,
-    dependencies = {
-      {
-        "microsoft/vscode-js-debug",
-        build = "npm ci --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-      },
-    },
-    ft = { "javascript" },
-  },
+  -- {
+  --   "mxsdev/nvim-dap-vscode-js",
+  --   config = function()
+  --     require("user.plugin-configs.nvim-dap-vscode-js")
+  --   end,
+  --   dependencies = {
+  --     {
+  --       "microsoft/vscode-js-debug",
+  --       build = "npm ci --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
+  --     },
+  --   },
+  --   ft = { "javascript" },
+  -- },
 
   {
     "nvim-telescope/telescope.nvim",
