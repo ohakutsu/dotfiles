@@ -1,27 +1,27 @@
 # Colors (Monokai Pro)
 [colors.bright]
-black = "#727072"
-blue = "#FC9867"
-cyan = "#78DCE8"
-green = "#A9DC76"
-magenta = "#AB9DF2"
-red = "#FF6188"
-white = "#FCFCFA"
-yellow = "#FFD866"
+black = "#7F8490"
+blue = "#F39660"
+cyan = "#76CCE0"
+green = "#9ED072"
+magenta = "#B39DF3"
+red = "#FC5D7C"
+white = "#E2E2E3"
+yellow = "#E7C664"
 
 [colors.normal]
-black = "#403E41"
-blue = "#FC9867"
-cyan = "#78DCE8"
-green = "#A9DC76"
-magenta = "#AB9DF2"
-red = "#FF6188"
-white = "#FCFCFA"
-yellow = "#FFD866"
+black = "#181819"
+blue = "#F39660"
+cyan = "#76CCE0"
+green = "#9ED072"
+magenta = "#B39DF3"
+red = "#FC5D7C"
+white = "#E2E2E3"
+yellow = "#E7C664"
 
 [colors.primary]
-background = "#2D2A2E"
-foreground = "#FCFCFA"
+background = "#2C2E34"
+foreground = "#E2E2E3"
 
 [env]
 TERM = "xterm-256color"
