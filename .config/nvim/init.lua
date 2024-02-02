@@ -1,6 +1,8 @@
 vim.g.mapleader = " " -- <Space>
 
-require("user.lazy-nvim")
+if not vim.g.vscode then
+  require("user.lazy-nvim")
+end
 
 --[[ vim config ]]
 vim.opt.autoindent = true
