@@ -27,7 +27,10 @@ vim.opt.tabstop = 2
 
 vim.cmd("syntax enable")
 vim.cmd("filetype plugin indent on")
-vim.cmd("colorscheme sonokai")
+
+if not vim.g.vscode then
+  vim.cmd("colorscheme sonokai")
+end
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("n", "<Esc><Esc>", "<Cmd>nohlsearch<CR>")
