@@ -4,6 +4,7 @@ require("nvim-treesitter.configs").setup({
     "graphql",
     "javascript",
     "json",
+    "jsonnet",
     "lua",
     "markdown",
     "python",
