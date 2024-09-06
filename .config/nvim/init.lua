@@ -1,8 +1,7 @@
 vim.g.mapleader = " " -- <Space>
 
-if not vim.g.vscode then
-  require("user.lazy-nvim")
-end
+require("user.lazy-nvim")
+require("user.quickfix")
 
 --[[ vim config ]]
 vim.opt.autoindent = true
@@ -27,10 +26,7 @@ vim.opt.tabstop = 2
 
 vim.cmd("syntax enable")
 vim.cmd("filetype plugin indent on")
-
-if not vim.g.vscode then
-  vim.cmd("colorscheme sonokai")
-end
+vim.cmd("colorscheme sonokai")
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("n", "<Esc><Esc>", "<Cmd>nohlsearch<CR>")
