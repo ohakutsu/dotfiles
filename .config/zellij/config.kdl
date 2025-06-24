@@ -2,9 +2,11 @@ default_mode "locked"
 default_shell "zsh"
 scroll_buffer_size 10000
 simplified_ui true
+show_startup_tips false
+show_release_notes false
 
 keybinds {
   shared {
-    bind "Alt w" { ToggleFloatingPanes; }
+    bind "Alt f" { ToggleFloatingPanes; }
   }
 }
