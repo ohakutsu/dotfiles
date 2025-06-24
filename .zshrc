@@ -37,7 +37,7 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
 fi
 
 ### homebrew ###
-eval $(/opt/homebrew/bin/brew shellenv)
+eval $(/usr/local/bin/brew shellenv)
 
 ### sheldon ###
 eval "$(sheldon source)"
