@@ -14,6 +14,7 @@ require("nvim-treesitter.configs").setup({
     "tsx",
     "typescript",
     "vim",
+    "vimdoc",
     "yaml",
   },
   sync_install = true,
