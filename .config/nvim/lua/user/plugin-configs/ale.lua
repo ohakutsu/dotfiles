@@ -5,15 +5,16 @@ vim.g.ale_linters = {
   jsonc = { "prettier" },
   lua = { "stylua", "cspell" },
   markdown = { "prettier", "cspell" },
-  ruby = { "rubocop", "cspell" },
+  ruby = { "rubocop", "cspell", "steep" },
   rust = { "cspell" },
   sh = { "shellcheck", "cspell" },
   slim = { "slim-lint" },
   sql = {},
   text = { "cspell" },
+  toml = { "tombi" },
   typescript = { "eslint", "prettier", "cspell" },
   typescriptreact = { "eslint", "prettier", "cspell" },
-  yaml = { "prettier" },
+  yaml = { "actionlint" },
 }
 vim.g.ale_fixers = {
   bash = { "shellcheck" },
@@ -23,12 +24,13 @@ vim.g.ale_fixers = {
   lua = { "stylua" },
   markdown = { "prettier" },
   ruby = { "rubocop" },
-  sh = { "shellcheck" },
+  sh = { "shfmt" },
   slim = { "slim-lint" },
   sql = {},
+  toml = { "tombi_format" },
   typescript = { "eslint", "prettier" },
   typescriptreact = { "eslint", "prettier" },
-  yaml = { "prettier" },
+  yaml = { "yamlfmt" },
 }
 
 vim.g.ale_ruby_rubocop_auto_correct_all = 1
