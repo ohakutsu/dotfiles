@@ -54,8 +54,10 @@ mise:
 .PHONY: all brew zsh git zellij alacritty nvim vscode gitui
 
 format:
+	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.json
 	shfmt -w .config/zsh/*.zsh .zshrc scripts/*.sh
-	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.toml **/*.json **/*.yml **/*.yaml
-	stylua --verbose --verify --glob **/*.lua -- .config/nvim
+	stylua --verify --glob **/*.lua -- .config/nvim
+	tombi format **/*.toml
+	yamlfmt -dstar **/*.{yaml,yml}
 
 .PHONY: format

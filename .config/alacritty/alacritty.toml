@@ -35,11 +35,10 @@ family = "ZUTOMOJI_HG35C"
 [scrolling]
 history = 20000
 
+[terminal]
 [terminal.shell]
 args = ["--login"]
 program = "zsh"
 
 [window]
 option_as_alt = "Both"
-
-[terminal]
