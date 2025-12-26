@@ -28,14 +28,6 @@ SAVEHIST=50000
 autoload -U compinit
 compinit
 
-# Load split zsh files
-ZSHHOME="${HOME}/.config/zsh"
-if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
-	for i in $ZSHHOME/*; do
-		[[ ${i##*/} = *.zsh ]] && [ \( -f $i -o -h $i \) -a -r $i ] && . $i
-	done
-fi
-
 ### homebrew ###
 eval $(/usr/local/bin/brew shellenv)
 
@@ -45,3 +37,11 @@ eval "$(sheldon source)"
 # pure
 PURE_GIT_PULL=0
 PURE_PROMPT_SYMBOL="$(printf "\xF4\x80\x82\xAF oO")"
+
+# Load split zsh files
+ZSHHOME="${HOME}/.config/zsh"
+if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
+	for i in $ZSHHOME/*; do
+		[[ ${i##*/} = *.zsh ]] && [ \( -f $i -o -h $i \) -a -r $i ] && . $i
+	done
+fi

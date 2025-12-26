@@ -46,6 +46,11 @@ cspell:
 	ln -sfv ${DOTFILES_PATH}/.cspell.json ~/.config/.cspell.json
 	ln -shfv ${DOTFILES_PATH}/.config/cspell ~/.config/cspell
 
+mise:
+	mkdir -p ~/.config/mise
+	ln -sfv ${DOTFILES_PATH}/.config/mise/config.toml ~/.config/mise/config.toml
+	mise install
+
 .PHONY: all brew zsh git zellij alacritty nvim vscode gitui
 
 format:
