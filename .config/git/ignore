@@ -1,4 +1,12 @@
 .DS_Store
 .env
 .vscode
+
+# Claude Code
+.claude/settings.local.json
+.steering/
+CLAUDE.local.md
+docs.local/
+
+# mise
 mise.local.toml
