@@ -13,3 +13,6 @@ docs.local/
 
 # mise
 mise.local.toml
+
+# zsh
+.config/zsh/*.local.zsh
