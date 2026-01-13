@@ -64,6 +64,7 @@ mise:
 claude:
 	mkdir -p ~/.claude
 	ln -sfv ${DOTFILES_PATH}/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+	ln -sfv ${DOTFILES_PATH}/.claude/settings.json ~/.claude/settings.json
 
 .PHONY: format
 format:
