@@ -25,5 +25,6 @@
     "type": "command",
     "command": "ccusage statusline",
     "padding": 0
-  }
+  },
+  "language": "Japanese"
 }
