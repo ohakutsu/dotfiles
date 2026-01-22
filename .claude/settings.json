@@ -23,7 +23,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "ccusage statusline",
+    "command": "ccstatusline",
     "padding": 0
   },
   "language": "Japanese"
