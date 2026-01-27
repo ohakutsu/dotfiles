@@ -65,6 +65,9 @@ claude:
 	mkdir -p ~/.claude
 	ln -sfv ${DOTFILES_PATH}/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 	ln -sfv ${DOTFILES_PATH}/.claude/settings.json ~/.claude/settings.json
+	# ccstatusline
+	mkdir -p ~/.config/ccstatusline
+	ln -sfv ${DOTFILES_PATH}/.config/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
 
 .PHONY: format
 format:
