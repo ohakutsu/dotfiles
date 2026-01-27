@@ -1,4 +1,5 @@
 vim.g.ale_linters = {
+  astro = { "eslint", "prettier" },
   bash = { "shellcheck" },
   javascript = { "eslint", "prettier", "cspell" },
   json = { "prettier", "cspell" },
@@ -17,6 +18,7 @@ vim.g.ale_linters = {
   yaml = { "actionlint" },
 }
 vim.g.ale_fixers = {
+  astro = { "eslint", "prettier" },
   bash = { "shellcheck" },
   javascript = { "eslint", "prettier" },
   json = { "prettier" },
