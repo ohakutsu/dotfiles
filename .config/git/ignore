@@ -3,11 +3,7 @@
 .vscode
 
 # Claude Code
-.claude/agents/
-.claude/commands/
 .claude/settings.local.json
-.claude/skills/
-.mcp.json
 .steering/
 CLAUDE.local.md
 docs.local/

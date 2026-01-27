@@ -26,5 +26,6 @@
     "command": "ccstatusline",
     "padding": 0
   },
-  "language": "Japanese"
+  "language": "Japanese",
+  "model": "sonnet"
 }
