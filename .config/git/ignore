@@ -3,6 +3,7 @@
 .vscode
 
 # Claude Code
+.claude/plans/
 .claude/settings.local.json
 .steering/
 CLAUDE.local.md

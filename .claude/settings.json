@@ -32,6 +32,7 @@
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
     "allowUnsandboxedCommands": false,
-    "excludedCommands": ["git:*"]
-  }
+    "excludedCommands": ["git:*", "gh:*"]
+  },
+  "plansDirectory": "./.claude/plans"
 }
