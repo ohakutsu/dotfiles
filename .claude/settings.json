@@ -1,5 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "0"
+  },
   "hooks": {
     "Notification": [
       {
@@ -34,5 +37,19 @@
     "allowUnsandboxedCommands": false,
     "excludedCommands": ["git:*", "gh:*"]
   },
-  "plansDirectory": "./.claude/plans"
+  "plansDirectory": "./.claude/plans",
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.github.com)",
+      "mcp__github__issue_read",
+      "mcp__github__list_issues",
+      "mcp__github__list_pull_requests",
+      "mcp__github__pull_request_read",
+      "mcp__github__search_issues"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(~/.ssh/**)"
+    ]
+  }
 }
