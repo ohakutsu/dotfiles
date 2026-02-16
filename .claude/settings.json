@@ -3,6 +3,18 @@
   "env": {
     "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "0"
   },
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.github.com)",
+      "mcp__github_actions_readonly__*",
+      "mcp__github_issues__issue_read",
+      "mcp__github_issues__list_issues",
+      "mcp__github_issues__search_issues",
+      "mcp__github_pull_requests__list_pull_requests",
+      "mcp__github_pull_requests__pull_request_read"
+    ],
+    "deny": ["Read(./.env)", "Read(~/.ssh/**)"]
+  },
   "hooks": {
     "Notification": [
       {
@@ -30,6 +42,17 @@
     "command": "ccstatusline",
     "padding": 0
   },
+  "extraKnownMarketplaces": {
+    "ohakutsu-plugin-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "ohakutsu/ohakutsu-plugin-marketplace"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "github-mcp@ohakutsu-plugin-marketplace": true
+  },
   "language": "Japanese",
   "sandbox": {
     "enabled": true,
@@ -37,19 +60,5 @@
     "allowUnsandboxedCommands": false,
     "excludedCommands": ["git:*", "gh:*"]
   },
-  "plansDirectory": "./.claude/plans",
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:api.github.com)",
-      "mcp__github__issue_read",
-      "mcp__github__list_issues",
-      "mcp__github__list_pull_requests",
-      "mcp__github__pull_request_read",
-      "mcp__github__search_issues"
-    ],
-    "deny": [
-      "Read(./.env)",
-      "Read(~/.ssh/**)"
-    ]
-  }
+  "plansDirectory": "./.claude/plans"
 }
