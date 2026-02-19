@@ -5,8 +5,11 @@
   },
   "permissions": {
     "allow": [
+      "Bash(gh pr diff *)",
+      "Bash(gh pr view *)",
       "WebFetch(domain:api.github.com)",
       "mcp__plugin_github-mcp_github_actions_readonly__*",
+      "mcp__plugin_github-mcp_github_discussions_readonly__*",
       "mcp__plugin_github-mcp_github_issues__issue_read",
       "mcp__plugin_github-mcp_github_issues__list_issues",
       "mcp__plugin_github-mcp_github_issues__search_issues",
