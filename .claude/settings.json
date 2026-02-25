@@ -5,8 +5,11 @@
   },
   "permissions": {
     "allow": [
+      "Bash(gh issue view *)",
       "Bash(gh pr diff *)",
       "Bash(gh pr view *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
       "WebFetch(domain:api.github.com)",
       "mcp__plugin_github-mcp_github_actions_readonly__*",
       "mcp__plugin_github-mcp_github_discussions_readonly__*",
@@ -54,7 +57,8 @@
     }
   },
   "enabledPlugins": {
-    "github-mcp@ohakutsu-plugin-marketplace": true
+    "github-mcp@ohakutsu-plugin-marketplace": true,
+    "dev-workflow@ohakutsu-plugin-marketplace": true
   },
   "language": "Japanese",
   "sandbox": {
