@@ -4,6 +4,7 @@
 
 # Claude Code
 .claude/plans/
+.claude/worktrees/
 .claude/settings.local.json
 .steering/
 CLAUDE.local.md
