@@ -16,3 +16,6 @@ mise.local.toml
 
 # zsh
 .config/zsh/*.local.zsh
+
+# playwright-cli
+.playwright-cli/
