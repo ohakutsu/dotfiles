@@ -100,8 +100,6 @@ require("lazy").setup({
   { "slim-template/vim-slim", ft = { "slim" } },
   { "andres-lowrie/vim-sqlx" },
 
-  { "github/copilot.vim" },
-
   {
     "terrortylor/nvim-comment",
     config = function()
