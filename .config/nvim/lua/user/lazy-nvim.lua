@@ -82,18 +82,6 @@ require("lazy").setup({
     end,
   },
 
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = function()
-      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-      ts_update()
-    end,
-    config = function()
-      require("user.plugin-configs.nvim-treesitter")
-    end,
-  },
-  { "RRethy/nvim-treesitter-endwise" },
-
   { "cohama/lexima.vim" },
 
   { "rust-lang/rust.vim", ft = { "rust" } },

@@ -3,10 +3,11 @@
 .vscode
 
 # Claude Code
+.claude/*.local/
 .claude/plans/
-.claude/worktrees/
 .claude/scheduled_tasks.lock
 .claude/settings.local.json
+.claude/worktrees/
 .steering/
 CLAUDE.local.md
 docs.local/
