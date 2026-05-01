@@ -68,6 +68,12 @@ claude:
 	mkdir -p ~/.config/ccstatusline
 	ln -sfv ${DOTFILES_PATH}/.config/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
 
+.PHONY: cmux
+cmux:
+	mkdir -p ~/.config/ghostty
+	ln -sfv ${DOTFILES_PATH}/.config/ghostty/config ~/.config/ghostty/config
+	ln -sfv ${DOTFILES_PATH}/.config/cmux/settings.json ~/.config/cmux/settings.json
+
 .PHONY: format
 format:
 	prettier --write --no-error-on-unmatched-pattern --list-different **/*.md **/*.json
