@@ -5,6 +5,9 @@
     "appearance": "dark",
     "reorderOnNotification": false
   },
+  "browser": {
+    "openTerminalLinksInCmuxBrowser": false
+  },
   "notifications": {
     "sound": "Submarine"
   }
