@@ -19,14 +19,6 @@
         "type": "separator"
       },
       {
-        "id": "9",
-        "type": "git-branch"
-      },
-      {
-        "id": "ed1de57d-f57d-4343-80e4-0e58dfbc133e",
-        "type": "separator"
-      },
-      {
         "id": "50ddfb86-5c5e-404e-9c3a-a84389ef7d76",
         "type": "session-usage"
       },
@@ -47,7 +39,28 @@
         "type": "block-timer"
       }
     ],
-    [],
+    [
+      {
+        "id": "1ca54abb-7b0f-4584-b0f7-1d14bbb066ee",
+        "type": "git-branch"
+      },
+      {
+        "id": "049dfca5-3bdf-4c26-8977-4a0602c7a10e",
+        "type": "separator"
+      },
+      {
+        "id": "e01c6ca9-b778-4514-98a0-b9853d9935f5",
+        "type": "worktree-name"
+      },
+      {
+        "id": "7675baa6-1d8f-4b4e-933f-86edf3e5a8bf",
+        "type": "separator"
+      },
+      {
+        "id": "18be5114-0fec-412e-973d-27804213f23f",
+        "type": "claude-session-id"
+      }
+    ],
     []
   ],
   "flexMode": "full-minus-40",
@@ -55,12 +68,14 @@
   "colorLevel": 2,
   "inheritSeparatorColors": false,
   "globalBold": false,
+  "minimalistMode": false,
   "powerline": {
     "enabled": false,
     "separators": [""],
     "separatorInvertBackground": [false],
     "startCaps": [],
     "endCaps": [],
-    "autoAlign": false
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
   }
 }
